@@ -1,0 +1,117 @@
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+</head>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" id="dev" href="#">COVID 19</a>
+    </div>
+    <ul class="nav navbar-nav">
+     <li class="active"><a href="#">Home</a></li>  
+    </ul >
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="covid19/covidinfo">Myth Busters</a></li>  
+     </ul >
+    <form class="navbar-form navbar-right" action="/action_page.php">
+      <div class="form-group" style="padding-right: 5px;">
+        <input type="text" [(ngModel)]="search" name="search" class="form-control" placeholder="Search Country">
+      </div>
+      <button type="submit" class="btn btn-default" (click)=getCountry()>Search</button>
+    </form>
+  </div>
+</nav>
+<div id="home"><img id="in" src="{{flag.flag}}">{{flag.name}}
+<div class="container-name">
+  
+  <div class="div1">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>All cases:<b>{{country.cases}}</b></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Today's cases:<b>{{country.todayCases}}</b></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+  </div> 
+  
+  <div class="div2">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>All Deaths:<b>{{country.deaths}}</b></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Today's Deaths:<b>{{country.todayDeaths}}</b></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </div>
+  <div class="div2"></div>
+  </div>
+</div>
+
+
+
+
+<div class="container" id="con">
+    
+    <h3 style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;text-align: center;">COVID-19 CORONAVIRUS OUTBREAK </h3>
+    <h5 style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;text-align: center;">Last Updated:  {{dated}}</h5>
+    <hr/>
+    <div class="row" id="ro">
+        <div class="col-lg-4" id="colum">
+            <h2 id="cases">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Coronavirus Cases</h2>
+            <h1 id="casesnum">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>{{alls.cases}}</b>&nbsp;&nbsp;<b>&uarr;</b></h1>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="covid19/bycountry">view by country</a></p>
+        </div> <div class="col-lg-4" id="colum">
+            <h2 id="deaths">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Coronavirus Deaths</h2>
+            <h1 id="deathsnum">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>{{alls.deaths}}</b>&nbsp;&nbsp;<b>&uarr;</b></h1>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+        </div>
+        <div class="col-lg-4" id="colum">
+            <h2 id="recoveredd">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Coronavirus Recovered</h2>
+            <h1 id="recovered">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>{{alls.recovered}}</b>&nbsp;&nbsp;<b>&uarr;</b></h1>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        </div>
+</div>
+</div>
+<hr/>
+<u><h2 id="top">Top new Stories</h2></u>
+&nbsp;
+&nbsp;
+<div class="container" id="con1">
+    <div class="row" id="tab">
+        <table border="1">
+        <div class="col-lg-6" *ngFor="let hero of actnews">
+<tr><th><h4 class="news">{{hero.title}}</h4></th></tr>
+<tr><td><img src="{{hero.urlToImage}}"><br/></td></tr>
+<tr><td><p>{{hero.description}}</p></td></tr>
+<tr><td><span>To know More <a href="{{hero.url}}">click here</a></span></td></tr>
+<tr><td><hr/></td></tr>
+</div>
+</table>
+</div>
+</div>
+<hr/>
+<div id="contact" class="container-fluid bg-grey">
+    <h2 class="text-center">CONTACT</h2>
+    <div class="row">
+      <div class="col-sm-5">
+        <p>Contact us and we'll get back to you within 24 hours.</p>
+        <p><span class="glyphicon glyphicon-map-marker"></span> Pune , India</p>
+        <p><span class="glyphicon glyphicon-phone"></span> +91 9130452518</p>
+        <p><span class="glyphicon glyphicon-envelope"></span> ashish.holey56@gmail.com</p>
+      </div>
+      <div class="col-sm-7 slideanim">
+        <div class="row">
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+          </div>
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+          </div>
+        </div>
+        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+        <div class="row">
+          <div class="col-sm-12 form-group">
+            <button class="btn btn-default pull-right" type="submit">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <iframe src="https://www.powr.io/plugins/hit-counter/view/23412484" style="width:100;" height="100" frameborder="0"></iframe>
+

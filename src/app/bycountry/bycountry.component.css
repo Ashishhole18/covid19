@@ -1,0 +1,26 @@
+#todayDeaths
+{
+    background-color: red;
+    color: cornsilk;
+}
+#recovered
+{
+    background-color: green;
+    color: cornsilk;
+    
+}
+#critical
+{
+    background-color: rgb(109, 3, 3);
+    color: seashell;
+}
+#country
+{
+    background-color: wheat;
+    color:darkorange;
+}
+#tab
+{
+    text-align: center;
+}
+

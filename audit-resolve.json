@@ -1,0 +1,50 @@
+{
+  "decisions": {
+    "1179|@angular/compiler-cli>chokidar>fsevents>node-pre-gyp>mkdirp>minimist": {
+      "decision": "fix",
+      "madeAt": 1585040918028
+    },
+    "1179|@angular/compiler-cli>chokidar>fsevents>node-pre-gyp>tar>mkdirp>minimist": {
+      "decision": "fix",
+      "madeAt": 1585040918028
+    },
+    "1179|@angular/compiler-cli>chokidar>fsevents>node-pre-gyp>rc>minimist": {
+      "decision": "fix",
+      "madeAt": 1585040918028
+    },
+    "1179|@angular-devkit/build-angular>webpack>watchpack>chokidar>fsevents>node-pre-gyp>mkdirp>minimist": {
+      "decision": "ignore",
+      "madeAt": 1585041010844
+    },
+    "1179|@angular-devkit/build-angular>webpack>watchpack>chokidar>fsevents>node-pre-gyp>tar>mkdirp>minimist": {
+      "decision": "ignore",
+      "madeAt": 1585041010844
+    },
+    "1179|@angular-devkit/build-angular>webpack>watchpack>chokidar>fsevents>node-pre-gyp>rc>minimist": {
+      "decision": "ignore",
+      "madeAt": 1585041010844
+    },
+    "1179|@angular-devkit/build-angular>webpack-dev-server>chokidar>fsevents>node-pre-gyp>mkdirp>minimist": {
+      "decision": "ignore",
+      "madeAt": 1585041010844
+    },
+    "1179|@angular-devkit/build-angular>webpack-dev-server>chokidar>fsevents>node-pre-gyp>tar>mkdirp>minimist": {
+      "decision": "ignore",
+      "madeAt": 1585041010844
+    },
+    "1179|@angular-devkit/build-angular>webpack-dev-server>chokidar>fsevents>node-pre-gyp>rc>minimist": {
+      "decision": "ignore",
+      "madeAt": 1585041010844
+    },
+    "1179|karma>optimist>minimist": {
+      "decision": "ignore",
+      "madeAt": 1585041010844
+    },
+    "1179|protractor>optimist>minimist": {
+      "decision": "ignore",
+      "madeAt": 1585041010844
+    }
+  },
+  "rules": {},
+  "version": 1
+}

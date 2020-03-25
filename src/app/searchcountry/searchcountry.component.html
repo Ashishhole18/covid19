@@ -1,0 +1,64 @@
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+</head>
+<h3 style="text-align: center;" id="g3"><a href="covid19/home">/Home</a></h3>
+<div class="container" id="con" style="height: 300px; width: 100%">
+    <h5 style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;text-align: center;">Last Updated:  {{dated}}</h5>
+    <div class="container">
+        <div class="jumbotron">
+            <h3 id="flag">{{flag.name}}</h3> 
+            <img src="{{flag.flag}}" id="imgflag"/>
+               
+               
+      </div>
+    <hr/>
+    <div class="row" id="ro">
+        <div class="col-lg-4" id="colum">
+            <div class="panel panel-default">
+                <div class="panel-heading" id="head">Coronavirus Cases</div>
+                <div class="panel-body" id="paneld1">All Cases
+                    <h3 id="paneld">{{country.cases}}</h3>
+                </div>
+                <hr/>
+                <div class="panel-body" id="paneld1">Today's Cases
+                    <h3 id="paneld2">{{country.todayCases}}</h3>
+                </div>
+                
+                <div class="panel-body" id="paneld1">Active Cases
+                    <h3 id="paneld2">{{country.active}}</h3>
+                </div>
+          </div>
+        </div> <div class="col-lg-4" id="colum">
+            <div class="panel panel-default">
+                <div class="panel-heading" id="head">Coronavirus Death</div>
+                <div class="panel-body" id="paneld11">All Death's
+                    <h3 id="paneld12">{{country.deaths}}</h3>
+                </div>
+                <hr/>
+                <div class="panel-body" id="paneld11">Today's Death
+                    <h3 id="paneld12">{{country.todayDeaths}}</h3>
+                </div>
+                <div class="panel-body" id="paneld11">Critical
+                    <h3 id="paneld12">{{country.critical}}</h3>
+                </div>
+          </div>
+
+        </div>
+        <div class="col-lg-4" id="colum">
+            <div class="panel panel-default">
+                <div class="panel-heading" id="head">Other</div>
+                <div class="panel-body" id="paneld11">Recovered
+                    <h3 id="paneld12" id="paneld13">{{country.recovered}}</h3>
+                </div>
+                <hr/>
+                <div class="panel-body" id="paneld11">Cases Per One Million
+                    <h3 id="paneld14">{{country.casesPerOneMillion}}</h3>
+                </div>
+          </div>
+        </div>
+</div>
+<h3 style="text-align: center;color: royalblue;"><a [routerLink]="['covid19/chart', name]">Show Graph</a></h3>
+<hr/>

@@ -1,0 +1,93 @@
+h2
+{
+    font-style: inherit;
+    text-align:left;
+    color:darkslategrey;
+    text-shadow: royalblue;
+    
+}
+
+#casesnum
+{
+    color:#db4d4d;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    text-align:left;
+}
+a
+{
+    color:green;
+}
+
+#column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clear floats after image containers */
+  #ro::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  #deathsnum
+  {
+      color: red;
+  }
+  #recovered
+  {
+      color: green;
+  }
+  .news
+  {
+      border-style: initial;
+      text-decoration: underline;
+  }
+  img
+  {
+      height: 300px;
+      width: 300px;
+      padding: 20px;
+  }
+  .jumbotron {
+    background-color: #f4511e;
+    color: #fff;
+    padding: 100px 25px;
+    font-family: Montserrat, sans-serif;
+  }
+  #con
+  {
+      background-color: rgb(243, 243, 200);
+  }
+  #tab
+  {
+      background-color: linen;
+  }
+  #con1
+  {
+      background-color:tan;
+  }
+  #top
+  {
+      text-align: center;
+      color: dimgrey;
+  }
+
+  .container-name div {
+    display: inline-block;
+	width: 500px;
+	min-height: 50px;
+	background-color: #eee;
+	height: auto;
+  }
+  #in
+  {
+      height: 100px;
+      width: 100px;
+  }
+  #home
+  {
+      text-align: center;
+      background-color: #eee;
+  }

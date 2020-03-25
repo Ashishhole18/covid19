@@ -1,0 +1,77 @@
+.panel-default
+{
+    height: 400px;
+    width: 400px;
+}
+.jumbotron
+{
+    height: 150px;
+    width: 100%;padding: 0px;
+}
+#flag
+{
+    text-align: center;
+}
+#imgflag
+{
+    align-self: center;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#head
+{
+    
+    color:yellowgreen;
+    font-weight: bold;
+    text-decoration: underline;
+}
+#paneld
+{
+    text-align: center;
+    color:orangered;
+    font-weight: bold;
+}
+#paneld1
+{
+    text-align: center;
+}
+#paneld2
+{
+    color: rgb(238, 101, 51);
+    font-weight: bold;
+}
+#paneld12
+{
+    text-align: center;
+    color: red;
+    font-weight: bold;
+}
+#paneld11
+{
+    text-align: center;
+    
+    
+}
+#paneld13
+{
+    text-align: center; 
+    font-weight: bold;
+    color: green;
+}
+#paneld14
+{
+    text-align: center;
+    font-weight: bold;
+    color: rgb(15, 194, 15);
+    
+    
+}
+#g2{
+    color: blue;
+    text-align: right;
+    
+}

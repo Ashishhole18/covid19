@@ -1,0 +1,51 @@
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+</head>
+<h3 style="text-align: center;" id="g3"><a href="covid19/home">/Home</a></h3>
+
+
+
+
+<div class="container" id="con1">
+    <div class="row" id="tab"><div class="panel panel-default" style="align-content: center;">
+        <div class="panel-heading">
+            <h4 style="text-align: center;">
+                COVID-19 Report
+              </h4>
+            </div>
+        </div>
+    </div>
+        <table class="table" table-scroll table-striped>
+            <thead>
+            <tr>
+                <th id="country" class="col-xs-1">Country</th>
+                <th class="col-xs-1">Cases</th>
+                <th class="col-xs-1">Deaths</th>
+                <th id="todayDeaths" class="col-xs-1">TodayDeaths</th>
+                <th id="recovered" class="col-xs-1">Recovered</th>
+                <th class="col-xs-1">Active</th>
+                <th id="critical" class="col-xs-1">Critical</th>
+                <th class="col-xs-1">CasesPerOneMillion</th>
+            </tr>
+        </thead>
+        
+            <tbody >
+                <tr *ngFor="let hero of country">
+                  <td scope="row" id="country"><a [routerLink]="['covid19/searchcountry', hero.country]">{{hero.country}}</a></td>
+                  <td>{{hero.cases}}</td>
+                  <td>{{hero.deaths}}</td>
+                  <td id="todayDeaths">{{hero.todayDeaths}}</td>
+                  <td id="recovered">{{hero.recovered}}</td>
+                  <td>{{hero.active}}</td>
+                  <td id="critical">{{hero.critical}}</td>
+                  <td>{{hero.casesPerOneMillion}}</td>
+                  
+                </tr>
+            
+
+
+</table>
+
